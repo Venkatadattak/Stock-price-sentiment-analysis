@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.myDiv {
+  border: 5px outset black;
+  background-color: darkblue;
+  text-align: center;
+  color: white;
+}
+</style>
+</head>
+<body>
+    <div class="myDiv">
+      <h2>Sentiment Analysis in Stock Prediction</h2>
+      <p>This is some text in a div element.</p>
+    </div>
+    
+    <div style="color:white">
+        <form action="{{url_for('classify')}}" method="post">
+            <h3>Head1</h3><br><input id="head1" name="head1" required="required">
+            <h3>Head2</h3><br><input id="head2" name="head2" required="required">     
+            <h3>Head3</h3><br><input id="head2" name="head3" required="required">
+            <h3>Head4</h3><br><input id="head2" name="head4" required="required">
+            <h3>Head5</h3><br><input id="head2" name="head5" required="required">
+            <h3>Head6</h3><br><input id="head2" name="head6" required="required">
+            <h3>Head7</h3><br><input id="head2" name="head7" required="required">
+            <h3>Head8</h3><br><input id="head2" name="head8" required="required">
+            <h3>Head9</h3><br><input id="head2" name="head9" required="required">
+            <h3>Head10</h3><br><input id="head2" name="head10" required="required">
+            <h3>Head11</h3><br><input id="head2" name="head11" required="required">
+            <h3>Head12</h3><br><input id="head2" name="head12" required="required">
+            <h3>Head13</h3><br><input id="head2" name="head13" required="required">
+            <h3>Head14</h3><br><input id="head2" name="head14" required="required">
+            <h3>Head15</h3><br><input id="head2" name="head15" required="required">
+            <h3>Head16</h3><br><input id="head2" name="head16" required="required">
+            <h3>Head17</h3><br><input id="head2" name="head17" required="required">
+            <h3>Head18</h3><br><input id="head2" name="head18" required="required">
+            <h3>Head19</h3><br><input id="head2" name="head19" required="required">
+            <h3>Head20</h3><br><input id="head2" name="head20" required="required">
+            <h3>Head21</h3><br><input id="head2" name="head21" required="required">
+            <h3>Head22</h3><br><input id="head2" name="head22" required="required">
+            <h3>Head23</h3><br><input id="head2" name="head23" required="required">
+            <h3>Head24</h3><br><input id="head2" name="head24" required="required">
+            <h3>Head25</h3><br><input id="head2" name="head25" required="required"> 
+            <br>
+            <br><br><button id="sub" name="Analyse" type="submit"> Analyse about the company</button>
+            <br>
+            <br>
+            <br>
+          </form>  
+              <br><h3>{{ prediction_text }}</h3>
+          
+          <style>
+            body {
+                background-color: purple;
+                text-align: center;
+                padding: 0px;
+            }
+              #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #sub:hover {
+            background-color: darkcyan;
+        }
+        
+        #head1 {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+            text-color: white;
+        }
+        
+        #head2 {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+</body>
